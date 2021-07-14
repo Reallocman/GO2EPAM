@@ -14,5 +14,4 @@ func PrintSorted(m map[int]string) {
 	for _,v:=range keys{
 		fmt.Println(m[v])
 	}
-
 }
