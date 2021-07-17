@@ -1,14 +1,16 @@
 package main
 
 import (
-	"structures/interfaces"
+
+	"structures/shapes"
+
 )
 
 func main() {
 
-	c := interfaces.Circle{Radius: 8}
-	r := interfaces.Rectangle{Height: 9, Width:3}
-	interfaces.DescribeShape(c)
-	interfaces.DescribeShape(r)
+	c := shapes.Circle{Radius: 8}
+	r := shapes.Rectangle{Height: 9, Width:3}
+	shapes.DescribeShape(c)
+	shapes.DescribeShape(r)
 
 }
