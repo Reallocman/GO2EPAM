@@ -1,10 +1,8 @@
 package main
 
 import (
-
 	"structures/shapes"
-
-)
+	)
 
 func main() {
 
