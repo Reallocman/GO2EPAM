@@ -1,6 +1,6 @@
 package main
 
-import "structures/shapes"
+import shapes "structures/shapes"
 
 func main() {
 	c := shapes.Circle{Radius: 8}

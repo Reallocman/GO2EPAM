@@ -24,9 +24,9 @@ func (c Circle) Perimeter() (float64,error) {
 	return 2 * math.Pi * c.Radius,nil
 }
 
-func (c Circle) String() (string,error) {
+func (c Circle) String() string {
 	if c.Radius < 0 {
-		return "",errors.New("you have entered incorrect parameters")
+		return fmt.Sprintf("Circle:radius %.2f", c.Radius)
 	}
-	return fmt.Sprintf("Circle:radius %.2f", c.Radius),nil
+	return fmt.Sprintf("Circle:radius %.2f", c.Radius)
 }

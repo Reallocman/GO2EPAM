@@ -24,9 +24,9 @@ func (r Rectangle) Perimeter() (float64,error) {
 	return 2 * (r.Width + r.Height),nil
 }
 
-func (r Rectangle) String() (string,error) {
+func (r Rectangle) String() string {
 	if r.Height < 0 || r.Width < 0 {
-		return "",errors.New("you have entered incorrect parameters")
+		return fmt.Sprintf("Rectangle with height %.2f and width %.2f\", r.Height, r.Width")
 	}
-	return fmt.Sprintf("Rectangle with height %.2f and width %.2f", r.Height, r.Width),nil
+	return fmt.Sprintf("Rectangle with height %.2f and width %.2f", r.Height, r.Width)
 }
